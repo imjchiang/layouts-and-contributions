@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faves & Hates</title>
+    <title>Favorite Foods</title>
 </head>
 <body>
+    <h1><%= title %> </h1>
     <ul>
-        <li><a href="/foods">Favorite Foods</a></li>
-        <li><a href="/animals">Favorite Animals</a></li>
+        <% foods.forEach(function(food) { %> 
+            <li><%= food; %> </li>
+        <% }); %> 
     </ul>
-    <%- body %> 
 </body>
 </html>
