@@ -5,6 +5,7 @@ const ejsLayouts = require("express-ejs-layouts");
 app.set("view engine", "ejs");
 app.use(ejsLayouts);
 app.use("/faves", require("./controllers/faves"));
+app.use("/hates", require("./controllers/hates"));
 
 app.get("/", function(req, res)
 {
